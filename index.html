@@ -2,35 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Todo app</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {
+      color: hsl(0, 0%, 98%); 
+      font-size: 11px; 
+      text-align: center; 
+      position: absolute;
+      margin: auto;
+      bottom: 10px;
+      left: 0;
+      right: 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <div class="backgroundImage"></div>
 
-  Todo
+  <div class="container">
 
-  <!-- Add dynamic number --> items left
+    <div class="todoHeader">
 
-  All
-  Active 
-  Completed
+      <div class="header">
+        <h1>TODO</h1>
+        <img src="images/icon-sun.svg" alt="Light">
+      </div>
 
-  Clear Completed
+      <div class="form">
+        <button type="button"></button>
+        <input type="text" name="text" placeholder="Create a new Todo...">
+      </div>
 
-  Drag and drop to reorder list
+    </div>
 
+    <div class="todoBody">
+      <ul class="todoList">
+        <li>hello</li>
+      </ul>
+      <div class="todoBottom">
+        <p class="itemsLeft">1 items left</p>
+        <div class="filters">
+          <button type="button">All</button>
+          <button type="button">Active</button>
+          <button type="button">Completed</button>
+        </div>
+        <button type="button">Clear Completed</button>
+        
+      </div>
+    </div>
+
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Shaurya Srivastava</a>.
   </div>
 </body>
 </html>
