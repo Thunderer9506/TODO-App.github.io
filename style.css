@@ -45,6 +45,7 @@ body{
     left: 0;
     right: 0;
     margin: auto;
+    transition: all 0.3s;
 }
 
 .header{
@@ -95,16 +96,6 @@ body{
     margin-top: 1rem;
     padding: 0;
     background-color: hsl(235, 24%, 19%);
-    /* li{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-top: 1px solid hsl(233, 18%, 38%);
-        button{
-            height: 20px;
-            width: 20px;
-        }
-    } */
 }
 .tasks {
     display: flex;
@@ -173,8 +164,26 @@ body{
     }
     .itemsLeft{
         padding-left: 5px;
+        margin: 0;
     }
     .active{
         color: hsl(220, 98%, 61%);
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .backgroundImage{
+        background-image: url(images/bg-mobile-dark.jpg);
+    }
+    .container{
+        width: 20rem;
+    }
+    .todoBottom{
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0px;
+        .itemsLeft{
+            padding-left: 0px;
+        }
     }
 }
