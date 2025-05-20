@@ -99,19 +99,28 @@ body{
         display: flex;
         align-items: center;
         border-top: 1px solid hsl(233, 18%, 38%);
+        button{
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            border: 1px solid hsl(234, 11%, 52%);
+            background-color: transparent;
+            margin-right: 13px;
+            margin-left: 13px;
+            cursor: pointer;
+            img{
+                display: none;
+            }
+        }
     }
-    .complete{
-        height: 20px;
-        width: 20px;
-        border-radius: 100%;
-        border: 1px solid hsl(234, 11%, 52%);
-        background-color: transparent;
-        margin-right: 13px;
-        margin-left: 13px;
-        cursor: pointer;
-    }
+    
 }
-
+.complete{
+    background-image: linear-gradient(to right,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .todoBottom{
     border-top: 1px solid hsl(233, 18%, 38%);
