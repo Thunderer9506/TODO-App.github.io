@@ -15,6 +15,9 @@ A simple and interactive Todo application built as part of the Frontend Mentor c
 - Toggle between light and dark mode
 - **Bonus:** Drag and drop to reorder items (optional/coming soon)
 
+## Live Demo
+- [TODO-App.github.io](https://thunderer9506.github.io/TODO-App.github.io/)
+
 ## Getting Started
 
 1. **Clone the repository:**
